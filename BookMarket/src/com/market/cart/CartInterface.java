@@ -1,8 +1,10 @@
 package com.market.cart;
+
+import java.util.*;
 import com.market.bookitem.Book;
 
 public interface CartInterface {
-	void printBookList(Book[] p);
+	void printBookList(ArrayList<Book>p);
 	boolean isCartInBook(String id);
 	void insertBook(Book p);
 	void removeCart(int numId);
